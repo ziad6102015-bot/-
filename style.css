@@ -1,0 +1,316 @@
+/* ===== زغلوله - موقع الصحة للأطفال ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600;700;800&family=Tajawal:wght@400;500;700;900&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  background: #FFFAF0;
+  color: #2B2640;
+  direction: rtl;
+}
+
+h1, h2, h3 {
+  font-family: 'Baloo Bhaijaan 2', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+p { line-height: 1.9; color: #625C7A; }
+
+a { color: inherit; text-decoration: none; }
+
+img, svg { display: block; max-width: 100%; }
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== الشريط العلوي ===== */
+.topbar {
+  background: #FFFFFF;
+  border-bottom: 4px solid #2B2640;
+}
+
+.topbar-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Baloo Bhaijaan 2', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #2B2640;
+}
+
+.brand .mascot { width: 44px; height: 44px; }
+
+nav.mainnav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav.mainnav a {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #2B2640;
+  border: 3px solid transparent;
+}
+
+nav.mainnav a:hover { border-color: #2B2640; }
+
+nav.mainnav a.active {
+  background: #FFC93C;
+  border-color: #2B2640;
+}
+
+/* ===== الهيرو ===== */
+.hero {
+  padding: 56px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.hero > div {
+  flex: 1 1 400px;
+}
+
+.eyebrow {
+  display: inline-block;
+  background: #63C972;
+  color: #FFFFFF;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 3px solid #2B2640;
+  margin-bottom: 14px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  color: #2B2640;
+}
+
+.hero h1 span { color: #FF6F59; }
+
+.hero p.lead {
+  font-size: 1.15rem;
+  margin-top: 16px;
+  max-width: 46ch;
+}
+
+.hero-art { flex: 1 1 300px; max-width: 320px; margin: 0 auto; }
+
+/* ===== الأزرار ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-family: 'Baloo Bhaijaan 2', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: 3px solid #2B2640;
+  cursor: pointer;
+}
+
+.btn-primary { background: #FF6F59; color: #FFFFFF; }
+.btn-secondary { background: #33C4E0; color: #FFFFFF; }
+.btn-ghost { background: #FFFFFF; color: #2B2640; }
+
+.btn-row { display: flex; gap: 14px; margin-top: 26px; flex-wrap: wrap; }
+
+/* ===== خريطة الرحلة (الصفحة الرئيسية) ===== */
+.journey {
+  padding: 20px 0 70px;
+}
+
+.journey h2 { text-align: center; font-size: 2rem; }
+.journey .sub { text-align: center; margin: 10px auto 40px; max-width: 50ch; }
+
+.path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+
+.stone {
+  background: #FFFFFF;
+  border: 4px solid #2B2640;
+  border-radius: 20px;
+  padding: 18px 14px;
+  text-align: center;
+  box-shadow: 6px 6px 0 rgba(0,0,0,0.12);
+  flex: 1 1 180px;
+  max-width: 220px;
+}
+
+.stone:hover { border-color: #FF6F59; }
+
+.stone .num {
+  width: 40px; height: 40px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #FFC93C;
+  border: 3px solid #2B2640;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Baloo Bhaijaan 2', sans-serif;
+  font-weight: 800;
+}
+
+.stone .icon { font-size: 2rem; margin-bottom: 6px; }
+.stone h3 { font-size: 1.05rem; }
+.stone p.tag { font-size: 0.85rem; margin: 6px 0 0; }
+
+/* ===== محتوى الصفحات الداخلية ===== */
+.page-hero {
+  padding: 44px 0 20px;
+  text-align: center;
+}
+
+.page-hero .icon-badge {
+  width: 84px; height: 84px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.6rem;
+  margin: 0 auto 16px;
+  border: 4px solid #2B2640;
+}
+
+.page-hero h1 { font-size: 2.2rem; }
+.page-hero p { max-width: 55ch; margin: 12px auto 0; font-size: 1.05rem; }
+
+.grid-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 26px 0 50px;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 4px solid #2B2640;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 6px 6px 0 rgba(0,0,0,0.12);
+  flex: 1 1 260px;
+}
+
+.card .icon { font-size: 2.3rem; margin-bottom: 10px; }
+.card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.card p { font-size: 0.95rem; margin: 0; }
+
+.card.good { border-color: #45A855; }
+.card.bad { border-color: #E85A45; }
+
+/* قسم مقارنة (صح / غلط) */
+.compare {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 10px 0 50px;
+}
+
+.compare-col {
+  border-radius: 20px;
+  padding: 24px;
+  border: 4px solid #2B2640;
+  flex: 1 1 300px;
+}
+
+.compare-col.yes { background: #E9F9EB; }
+.compare-col.no { background: #FFECE8; }
+
+.compare-col h3 {
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+}
+
+.compare-col ul { padding-right: 20px; margin: 0; }
+.compare-col li { margin-bottom: 10px; font-weight: 500; }
+
+/* قائمة خطوات */
+.steps {
+  padding: 10px 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #FFFFFF;
+  border: 4px solid #2B2640;
+  border-radius: 20px;
+  padding: 16px 20px;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.12);
+}
+
+.step .num {
+  flex-shrink: 0;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: #33C4E0;
+  border: 3px solid #2B2640;
+  color: #FFFFFF;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Baloo Bhaijaan 2', sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.step h3 { font-size: 1.05rem; margin-bottom: 4px; }
+.step p { margin: 0; font-size: 0.92rem; }
+
+/* صندوق نصيحة زغلوله */
+.tip-box {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #8C6FE8;
+  color: #FFFFFF;
+  border: 4px solid #2B2640;
+  border-radius: 20px;
+  padding: 20px 24px;
+  margin: 10px 0 50px;
+}
+
+.tip-box .mascot { width: 60px; height: 60px; flex-shrink: 0; }
+.tip-box p { color: #FFFFFF; margin: 0; font-weight: 500; }
+.tip-box strong { font-family: 'Baloo Bhaijaan 2', sans-serif; }
+
+/* ===== فوتر ===== */
+footer {
+  border-top: 4px solid #2B2640;
+  background: #FFFFFF;
+  padding: 26px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p { margin: 0; font-size: 0.9rem; }
